@@ -1,0 +1,245 @@
+
+<h1 class="samsun">Samsung Laptops</h1>
+<section class="new-laptop1" fxLayout="Columns" fxLayout="Auto" fxLayoutGap="30px" fxLayoutAlign="start center">
+
+  <mat-card fxFlex="420px">
+  <mat-card-title><p>{{ sl1.name }}</p></mat-card-title>
+<img src="assets/images/n9.jpg" mat-card-image>
+ <mat-card-content>
+  <p > {{ sl1.features }} </p>
+ </mat-card-content>
+<mat-card-footer>
+  <mat-card-actions>
+    <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+         {{ counter}}
+        <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+        <span class="med-spacer"></span>
+ 
+    
+    <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(sl1, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+      <span class="navc">Cart</span></button>
+  <p fxFlex fxFlexAlign="flex end" class="price"> {{ sl1.price }}</p>
+  </mat-card-actions>
+</mat-card-footer>
+</mat-card>
+
+<!--FIRST LAPTOP -->
+
+<mat-card fxFlex="420px">
+    <mat-card-title><p>{{ sl2.name }}</p></mat-card-title>
+  <img src="assets/images/n7.jpg" mat-card-image>
+   <mat-card-content>
+    <p> {{ sl2.features }} </p>
+   </mat-card-content>
+  <mat-card-footer>
+    <mat-card-actions>
+        <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+         {{ counter}}
+        <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+        <span class="med-spacer"></span>
+  <button [disabled]="counter < 1" mat-button class="buttion" (click)="addToCart(sl2, counter)">
+
+      <mat-icon class="db">add_shopping_cart</mat-icon>
+        <span class="navc">Cart</span></button>
+    <p fxFlex fxFlexAlign="flex end" class="price"> {{ sl2.price }}</p>
+    </mat-card-actions>
+  </mat-card-footer>
+  </mat-card>
+  
+  <!--SECOND LAPTOP -->
+  <mat-card fxFlex="420px">
+      <mat-card-title><p>{{ sl3.name }}</p></mat-card-title>
+    <img src="assets/images/noz.jpg" mat-card-image>
+     <mat-card-content>
+      <p> {{ sl3.features }} </p>
+     </mat-card-content>
+    <mat-card-footer>
+      <mat-card-actions>
+          <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+          {{ counter}}
+         <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+         <span class="med-spacer"></span>
+   <button [disabled]="counter < 1" mat-button class="buttion" (click)="addToCart(sl3, counter)">
+        <mat-icon class="db">add_shopping_cart</mat-icon>
+          <span class="navc">Cart</span></button>
+      <p fxFlex fxFlexAlign="flex end" class="price"> {{ sl3.price }}</p>
+      </mat-card-actions> 
+    </mat-card-footer>
+    </mat-card>
+    
+    <!--THIRD LAPTOP -->
+      
+
+
+</section><!--FIRST ROW-->
+
+<!-------------------------------------------------------------------------------------------------------->
+                                     <!--FIRST      ROW-->
+
+
+
+
+                                   <h1 class="ace"> Acer Laptops</h1>
+
+<section class="new-laptop2" fxLayout="Columns" fxLayout="Auto" fxLayoutGap="30px" fxLayoutAlign="start center">
+    <mat-card fxFlex="420px">
+      <mat-card-title><p>{{ al1.name }}</p></mat-card-title>
+    <img src="assets/images/swift5.jpg" mat-card-image>
+     <mat-card-content>
+      <p> {{ al1.features }}</p>
+     </mat-card-content>
+    <mat-card-footer>
+      <mat-card-actions>
+        <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+         {{ counter}}
+        <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+        <span class="med-spacer"></span>
+ 
+    
+    <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(al1, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+      <span class="navc">Cart</span></button>
+      <p fxFlex fxFlexAlign="flex end" class="price">{{ al1.price }}</p>
+      </mat-card-actions>
+    </mat-card-footer>
+    </mat-card>
+    
+    <!--FIRST LAPTOP -->
+    
+    <mat-card fxFlex="420px">
+        <mat-card-title><p>{{ al2.name }}</p></mat-card-title>
+      <img src="assets/images/nitro5.png" mat-card-image>
+       <mat-card-content>
+        <p> {{ al2.features }}</p>
+       </mat-card-content>
+      <mat-card-footer>
+        <mat-card-actions>
+          <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+         {{ counter}}
+        <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+        <span class="med-spacer"></span>
+ 
+    
+    <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(al2, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+      <span class="navc">Cart</span></button>
+        <p fxFlex fxFlexAlign="flex end" class="price">{{ al2.price }} </p>
+        </mat-card-actions>
+      </mat-card-footer>
+      </mat-card>
+      
+      <!--SECOND LAPTOP -->
+      <mat-card fxFlex="420px">
+          <mat-card-title><p>{{ al3.name }}</p></mat-card-title>
+        <img src="assets/images/spin5.png" mat-card-image>
+         <mat-card-content>
+          <p> {{ al3.features }}</p>
+         </mat-card-content>
+        <mat-card-footer>
+          <mat-card-actions>
+            <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+            {{ counter}}
+           <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+           <span class="med-spacer"></span>
+    
+       
+       <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(al3, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+         <span class="navc">Cart</span></button>
+          <p fxFlex fxFlexAlign="flex end" class="price">{{ al3.price }} </p>
+          </mat-card-actions>
+        </mat-card-footer>
+        </mat-card>
+        
+        <!--THIRD LAPTOP -->
+               
+    
+    
+    
+    
+    </section>
+        
+    <!--------------------------------------------------------------------------------------------------->
+                                              <!--SECOND ROW-->
+
+
+
+                                              
+
+                                   <h1 class="ace"> Lenovo Laptops</h1>
+
+                                   <section class="new-laptop3" fxLayout="Columns" fxLayout="Auto" fxLayoutGap="30px" fxLayoutAlign="start center">
+                                       <mat-card fxFlex="420px">
+                                         <mat-card-title><p>{{ ll1.name }}</p></mat-card-title>
+                                       <img src="assets/images/a485.jpg" mat-card-image>
+                                        <mat-card-content>
+                                         <p> {{ ll1.features }} </p>
+                                        </mat-card-content>
+                                       <mat-card-footer>
+                                         <mat-card-actions>
+                                          <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+                                          {{ counter}}
+                                         <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+                                         <span class="med-spacer"></span>
+                                  
+                                     
+                                     <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(ll1, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+                                       <span class="navc">Cart</span></button>           
+                                         <p fxFlex fxFlexAlign="flex end" class="price"> {{ ll1.price }}</p>
+                                         </mat-card-actions>
+                                       </mat-card-footer>
+                                       </mat-card>
+                                       
+                                       <!--FIRST LAPTOP -->
+                                       
+                                       <mat-card fxFlex="420px">
+                                           <mat-card-title><p>{{ ll2.name }}</p></mat-card-title>
+                                         <img src="assets/images/t580.png" mat-card-image>
+                                          <mat-card-content>
+                                           <p> {{ ll2.features }} </p>
+                                          </mat-card-content>
+                                         <mat-card-footer>
+                                           <mat-card-actions>
+                                            <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+                                            {{ counter}}
+                                           <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+                                           <span class="med-spacer"></span>
+                                    
+                                       
+                                       <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(ll2, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+                                         <span class="navc">Cart</span></button>
+                                           <p fxFlex fxFlexAlign="flex end" class="price"> {{ ll2.price }}</p>
+                                           </mat-card-actions>
+                                         </mat-card-footer>
+                                         </mat-card>
+                                         
+                                         <!--SECOND LAPTOP -->
+                                         <mat-card fxFlex="420px">
+                                             <mat-card-title><p>{{ ll3.name }}</p></mat-card-title>
+                                           <img src="assets/images/l580.jpg" mat-card-image>
+                                            <mat-card-content>
+                                             <p>{{ ll3.features }} </p>
+                                            </mat-card-content>
+                                           <mat-card-footer>
+                                             <mat-card-actions>
+                                              <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+                                              {{ counter}}
+                                             <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+                                             <span class="med-spacer"></span>
+                                      
+                                         
+                                         <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(ll3, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+                                           <span class="navc">Cart</span></button>
+                                             <p fxFlex fxFlexAlign="flex end" class="price">{{ ll3.price }} </p>
+                                             </mat-card-actions>
+                                           </mat-card-footer>
+                                           </mat-card>
+                                           
+                                           <!--THIRD LAPTOP -->
+                                             
+                                              
+
+                                       
+                                       
+                                       
+                                       </section>
+                                       
+                                       <!--THIRD ROW-->
+                                       

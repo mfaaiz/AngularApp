@@ -1,0 +1,36 @@
+
+
+
+<mat-nav-list>
+    <a mat-list-item routerLink="/mobile" (click)="onClose()"><mat-icon class="db">phone_android</mat-icon>
+        <span class="navc">Mobile</span></a>
+
+    <a mat-list-item routerLink="/laptop" (click)="onClose()"><mat-icon class="db">laptop</mat-icon>
+        <span class="navc">Laptop </span></a>
+ 
+    <!-- <a mat-list-item routerLink="/" (click)="onClose()"><mat-icon class="db">watch</mat-icon>
+        <span class="navc">Watches</span></a> -->
+        
+     <a *ngIf="!isAuth" mat-list-item  routerLink="/login" (click)="onClose()"><mat-icon class="db">person</mat-icon>
+        <span class="navc">Log In</span></a>
+
+        <a mat-list-item routerLink="/aboutus" (click)="onClose()"><mat-icon class="db">phone</mat-icon> 
+            <span class="navc">Contact Us</span></a>
+
+            
+        <a *ngIf="isAuth" mat-list-item routerLink="/addacart" (click)="onClose()"><mat-icon class="db">local_grocery_store</mat-icon>
+            <span class="navc">Checkout</span></a>         
+
+    <a *ngIf="isAuth" mat-list-item style="cursor: pointer" (click)="onLogout()" ><mat-icon class="db">eject</mat-icon>
+        <span class="navc">Log Out</span>
+    </a>
+<!-- 
+<button mat-icon-button  *ngIf="isAuth">
+    <mat-icon class="db">eject</mat-icon>
+    <span class="navc">Log Out</span>
+
+</button> -->
+
+
+
+</mat-nav-list>

@@ -1,0 +1,215 @@
+
+
+
+
+
+<h1 class="samsun">Samsung Mobile Phones</h1>
+<section class="new-mobile1" fxLayout="Columns" fxLayout="Auto" fxLayoutGap="20px" fxLayoutAlign="start center">
+
+  <mat-card fxFlex="320px">
+  <mat-card-title><p>{{ S9.name }}</p></mat-card-title>
+<img src="assets/images/S9.jpg" mat-card-image>
+ <mat-card-content>
+  <p> {{ S9.features }}  </p>
+ </mat-card-content>
+<mat-card-footer>
+  <mat-card-actions>
+    <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+    {{ counter}}
+   <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+   <span class="med-spacer"></span>
+
+
+<button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(S9, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+ <span class="navc">Cart</span></button>
+  <p fxFlex fxFlexAlign="flex end" class="price"> {{ S9.price }}</p>
+  </mat-card-actions>
+</mat-card-footer>
+</mat-card>
+
+<!--FIRST Mobile -->
+
+<mat-card fxFlex="320px">
+    <mat-card-title><p>{{ S8.name }}</p></mat-card-title>
+  <img src="assets/images/S8.jpg" mat-card-image>
+   <mat-card-content>
+    <p> {{ S8.features }}</p>
+   </mat-card-content>
+  <mat-card-footer>
+    <mat-card-actions>
+      <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+         {{ counter}}
+        <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+        <span class="med-spacer"></span>
+ 
+    
+    <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(S8, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+      <span class="navc">Cart</span></button>
+    <p fxFlex fxFlexAlign="flex end" class="price"> {{ S8.price }}</p>
+    </mat-card-actions>
+  </mat-card-footer>
+  </mat-card>
+  
+  <!--SECOND MOBILE -->
+  <mat-card fxFlex="320px">
+      <mat-card-title><p>{{ Note9.name }}</p></mat-card-title>
+    <img src="assets/images/NOTE9.jpg" mat-card-image>
+     <mat-card-content>
+      <p> {{ Note9.features }} </p>
+     </mat-card-content>
+    <mat-card-footer>
+      <mat-card-actions>
+        <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+        {{ counter}}
+       <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+       <span class="med-spacer"></span>
+
+   
+   <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(Note9, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+     <span class="navc">Cart</span></button>     
+     <p fxFlex fxFlexAlign="flex end" class="price"> {{ Note9.price }}</p>
+      </mat-card-actions>
+    </mat-card-footer>
+    </mat-card>
+    
+    <!--THIRD MOBILE -->
+      
+    <mat-card fxFlex="320px">
+        <mat-card-title><p>{{ J6.name }}</p></mat-card-title>
+      <img src="assets/images/J6.jpg" mat-card-image>
+       <mat-card-content>
+        <p> {{ J6.features }} </p>
+       </mat-card-content>
+      <mat-card-footer>
+        <mat-card-actions>
+         
+            <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+            {{ counter}}
+           <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+           <span class="med-spacer"></span>
+    
+       
+       <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(J6, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+         <span class="navc">Cart</span></button>  
+        <p fxFlex fxFlexAlign="flex end" class="price"> {{ J6.price }}</p>
+        </mat-card-actions>
+      </mat-card-footer>
+      </mat-card>
+      
+      <!-- FOURTH MOBILE -->
+
+
+</section><!--FIRST ROW-->
+
+<!-------------------------------------------------------------------------------------------------------->
+ <!--FIRST      ROW-->
+
+
+ <h1 class="apple">Apple Phones</h1>
+<section class="new-mobile2" fxLayout="Columns" fxLayout="Auto" fxLayoutGap="20px" fxLayoutAlign="start center">
+
+  <mat-card fxFlex="320px">
+  <mat-card-title><p>{{ ix.name }}</p></mat-card-title>
+<img src="assets/images/ix.jpg" mat-card-image>
+ <mat-card-content>
+  <p> {{ ix.features }} </p>
+ </mat-card-content>
+<mat-card-footer>
+  <mat-card-actions>
+    
+      <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+      {{ counter}}
+     <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+     <span class="med-spacer"></span>
+
+ 
+ <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(ix, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+   <span class="navc">Cart</span></button>  
+  <p fxFlex fxFlexAlign="flex end" class="price"> {{ ix.price }}</p>
+  </mat-card-actions>
+</mat-card-footer>
+</mat-card>
+
+<!--FIRST Mobile -->
+
+<mat-card fxFlex="320px">
+    <mat-card-title><p>{{ i8.name }}</p></mat-card-title>
+  <img src="assets/images/i8.jpg" mat-card-image>
+   <mat-card-content>
+    <p> {{ i8.features }} </p>
+   </mat-card-content>
+  <mat-card-footer>
+    
+      <mat-card-actions>
+        <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+        {{ counter}}
+       <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+       <span class="med-spacer"></span>
+
+   
+   <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(i8, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+     <span class="navc">Cart</span></button>  
+    <p fxFlex fxFlexAlign="flex end" class="price"> {{ i8.price }}</p>
+    </mat-card-actions>
+  </mat-card-footer>
+  </mat-card>
+  
+  <!--SECOND MOBILE -->
+  <mat-card fxFlex="320px">
+      <mat-card-title><p>{{ i7.name }}</p></mat-card-title>
+    <img src="assets/images/i7.jpg" mat-card-image>
+     <mat-card-content>
+      <p> {{ i7.features }} </p>
+     </mat-card-content>
+    <mat-card-footer>
+      
+        <mat-card-actions>
+          <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+          {{ counter}}
+         <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+         <span class="med-spacer"></span>
+  
+     
+     <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(i7, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+       <span class="navc">Cart</span></button>  
+      <p fxFlex fxFlexAlign="flex end" class="price"> {{ i7.price }}</p>
+      </mat-card-actions>
+    </mat-card-footer>
+    </mat-card>
+    
+    <!--THIRD MOBILE -->
+      
+    <mat-card fxFlex="320px">
+        <mat-card-title><p>{{ i6.name }}</p></mat-card-title>
+      <img src="assets/images/i6.png" mat-card-image>
+       <mat-card-content>
+        <p> {{ i6.features }} </p>
+       </mat-card-content>
+      <mat-card-footer>
+        
+          <mat-card-actions>
+            <mat-icon  (click)="countProd('remove')" color="primary">remove</mat-icon>
+            {{ counter}}
+           <mat-icon   (click)="countProd('add')" color="primary">add</mat-icon>
+           <span class="med-spacer"></span>
+    
+       
+       <button [disabled]="counter < 1" type="submit" mat-button class="buttion"(click)="addToCart(i6, counter)" ><mat-icon class="db">add_shopping_cart</mat-icon>
+         <span class="navc">Cart</span></button>  
+        <p fxFlex fxFlexAlign="flex end" class="price"> {{ i6.price }}</p>
+        </mat-card-actions>
+      </mat-card-footer>
+      </mat-card>
+      
+      <!-- FOURTH LAPTOP -->
+
+              
+
+
+
+
+</section><!--SECOND ROW-->
+
+                                     <!--SECOND     ROW-->
+
+    

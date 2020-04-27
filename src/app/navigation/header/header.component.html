@@ -1,0 +1,27 @@
+
+<mat-toolbar>
+    
+  <div>
+      <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon class="db"> menu </mat-icon>
+  
+  </button></div>
+
+  <div class="mainheading"><a routerLink="/">LOGO</a></div>
+  <div fxFlex></div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+      <ul class="navigationlinks">
+        <li *ngIf="!isAuth"><a routerLink="/signup">Sign up</a></li>
+         <li *ngIf="!isAuth"><a routerLink="/login">Log In</a></li>
+         <li *ngIf="isAuth"><a style="cursor: pointer" (click)="onLogout()" >Log out</a></li>
+                  <li *ngIf="isAuth"><a routerLink="/admin"><mat-icon>settings</mat-icon></a></li>
+   
+         <li *ngIf="isAuth"><a routerLink="/addacart"><mat-icon>local_grocery_store</mat-icon></a></li>
+         <li><a routerLink="/aboutus">Contact us</a></li>
+
+      </ul>
+     
+  </div><!--navigation links div-->
+ 
+
+</mat-toolbar>

@@ -1,0 +1,84 @@
+<body>
+  <div class="first">
+  <h1 class="heading1"> SIGN UP</h1>
+  <section class="signup-form">
+  <form fxLayout="column" fxLayoutALign="center center"  fxLayoutGap="1px" #f="ngForm" (ngSubmit)="onSubmit(f)">
+  
+      <mat-form-field hintLabel="Name shouldn't contain special characters">
+        <input type="text" matInput placeholder="Username " 
+        ngModel name="user" 
+        username required 
+        #userInput="ngModel">
+  
+  
+        <mat-error *ngIf="userInput.hasError('required')"> You must enter a name</mat-error>
+       
+        <mat-error ></mat-error>
+      </mat-form-field>
+      
+      <!--Name-->
+  
+      
+     <mat-form-field>
+      <input type="email" matInput placeholder="Email" ngModel name="email" 
+      email required
+      #emailInput="ngModel">
+      <mat-error *ngIf="emailInput.hasError('required')"> Field Empty</mat-error>
+      <mat-error *ngIf="!emailInput.hasError('required')">Invalid Email</mat-error>
+    </mat-form-field>
+     <!--EMAIL-->
+    
+    <mat-form-field hintLabel="min 8 characters">
+      <input type="password" matInput placeholder="Password" ngModel name="password" 
+      password required minlength="8"  #pwInput="ngModel">
+    
+      <mat-hint align="end"> {{ pwInput.value?.length }}/8 </mat-hint> 
+    <mat-error *ngIf="pwInput.hasError('required')">Must enter a password</mat-error> 
+    
+  </mat-form-field>
+    <!--Password-->
+  
+        <!--Confirm Password-->
+  
+        <mat-form-field hintLabel="min 11 characters">
+            <input type="text" matInput placeholder="Mobile No" ngModel name="phoneno" 
+            password required minlength="11"  #pwInput="ngModel">
+          
+            <mat-hint align="end"> {{ pwInput.value?.length }}/11 </mat-hint> 
+          <mat-error *ngIf="pwInput.hasError('required')">Must enter a password</mat-error> 
+          
+        </mat-form-field>
+        <!--Phone no-->
+  
+        
+      <mat-form-field >
+          <input type="text" matInput placeholder="Address" 
+          ngModel name="address" 
+          username required 
+          #userInput="ngModel">
+    
+    
+          <mat-error *ngIf="userInput.hasError('required')"> You must enter a name</mat-error>
+         
+          <mat-error ></mat-error>
+        </mat-form-field>
+        <!--Address-->
+  
+    <mat-form-field>
+      <input matInput placeholder="Enter your birthdate" [matDatepicker]="picker" ngModel name="date" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <!--Date Picker-->
+  
+    <mat-checkbox ngModel name="Agree" required #TInput="ngModel" color="primary">Agree to terms and conditions</mat-checkbox>
+   
+    
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid" > Submit</button>
+    
+    </form>
+  </section>
+  
+  </div>
+  
+  </body>

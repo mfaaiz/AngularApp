@@ -1,0 +1,101 @@
+/* @font-face{
+    font-family:'Raleway';
+    src :url(fonts/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family:'ubuntu';
+    src :url(fonts/Ubuntu.ttf);
+    font-style: normal;
+    font-weight: 700;
+} */
+
+mat-card-title, mat-card-content, mat-card-footer
+{
+    font-family: 'Raleway';
+    
+ }
+ mat-card-title
+{
+    font-size: 25px;
+    text-align: center;
+   
+}
+
+
+img
+{
+    width: auto;
+    height: 230px;
+}
+.buttion
+{
+    background-color:limegreen;
+  position: relative;
+  left: 20px;
+}
+.buttion:hover
+{
+    background-color: lightgreen;
+}
+.db
+{
+    color: white;
+}
+
+
+.navc
+{
+    color: white;
+    padding: 20px;
+    font-family:'Raleway';
+    position: relative;
+    left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+
+
+}/*span wala buykeyword */
+
+.price
+{
+    color: black;
+    padding-left: 120px;
+    font-style: italic;
+}
+
+.new-laptop1
+{
+    padding-top: 40px;
+     font-family: 'Raleway';
+}
+
+/* 1st section*/
+.samsun
+{
+    font-family: 'ubuntu';
+    text-align:center;
+     font-size: 35px;
+      color: rgba(0,0,0,0.7);
+}
+/* heading of samsung laptops*/
+
+.new-laptop2
+{
+    padding-top: 40px;
+     width: 100%;     
+}
+
+/* 1st section*/
+.ace
+{
+    font-family: 'ubuntu';
+    text-align:center;
+    font-size: 35px;
+    color:rgba(0,0,0,0.7);
+    padding-top: 30px;
+    
+}
+/* heading of samsung laptops*/
